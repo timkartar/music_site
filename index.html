@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<header>
+        <script type='text/javascript' src='//www.midijs.net/lib/midi.js'></script>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>    
+        <script src="script.js"></script>    
+</header>
+<body>
+
+<!-- <h1>My First Heading</h1>
+<p>My first paragraph.</p>
+<audio controls>
+    <source src="test.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>   -->
+<!-- <div id="midi-player">
+    <script>
+        MIDI.Player.loadFile("testmid.mid", callback);
+        MIDI.Player.start();
+    </script>  -->
+
+<p> <a href="#" onClick="MIDIjs.play('testmid1.mid');">Play Song1</a></p>
+<a href="#" onClick="MIDIjs.stop();">Stop Song1 Playback</a> 
+
+ <p> <a href="#" onClick="MIDIjs.play('testmid2.mid');">Play Song2</a></p>
+ <a href="#" onClick="MIDIjs.stop();">Stop Song2 Playback</a> 
+
+ <p>
+        <input type="range" id="rangeInput" name="rangeInput" step="1" min="0" max="10">
+        <label id="rangeText" /> </p>
+</div>
+</body>
+</html> 
